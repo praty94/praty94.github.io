@@ -9,7 +9,27 @@
 :root {
   --dark-color: #000;
 }
-
+.bee-container{
+  position: absolute;
+  top:100px;
+  left:200px;
+  opacity: 0%;
+  animation-name: bee-animation;
+  animation-duration: 25s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes bee-animation {
+  0%   { opacity: 100%; left:200px; top:100px; transform: rotateY(0deg);}
+  12.5%  { opacity: 100%; left:300px; top:150px;  transform: rotateY(0deg);}
+  25%  { opacity: 100%; left:400px; top:100px;  transform: rotateY(0deg);}
+  37.5%  { opacity: 100%; left:500px; top: 200px;  transform: rotateY(0deg);}
+  50% { opacity: 100%; left: 600px; top:100px;  transform: rotateY(0deg);}
+  62.5% { opacity: 100%; left:500px; top:150px; transform: rotateY(180deg);}
+  75% { opacity: 100%; left:400px; top:100px; transform: rotateY(180deg);}
+  87.5% { opacity: 100%; left:300px; top:100px;transform: rotateY(180deg);}
+  100% { opacity: 100%; left:200px; top:100px; transform: rotateY(0deg);}
+}
 body {
   display: flex;
   align-items: flex-end;
